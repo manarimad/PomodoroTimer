@@ -1,1 +1,1 @@
-console.log("hello manar");
+(()=>{"use strict";console.log("hello manar")})();
