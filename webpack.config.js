@@ -33,6 +33,10 @@ module: {
           "sass-loader",
         ],
       },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+            loader: 'file-loader',
+      },
     ],
   },
   plugins: [new HtmlWebpackPlugin({
