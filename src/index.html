@@ -1,12 +1,61 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.scss">
+</head>
+<body>
+    <div class="container">
+        <h1>Pomodoro Timer</h1>
+        <div id="timer-display">25:00</div>
+        <div class="controls">
+            <button id="start-btn">Start</button>
+            <button id="pause-btn">Pause</button>
+            <button id="reset-btn">Reset</button>
+        </div>
+        <div class="settings">
+            <label>Work Duration (min): <input id="work-duration" type="number" value="25"></label>
+            <label>Break Duration (min): <input id="break-duration" type="number" value="5"></label>
+            <button id="save-settings">Save</button>
+        </div>
+    </div>
+    <script src="main.js"></script> -->
+    <!-- <script src="index.js"></script> -->
+<!-- </body>
+</html> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.scss">
 </head>
 <body>
-    <h1>Pomodoro Timer</h1>
-    <!-- <script src="index.js"></script> -->
+    <div class="container">
+        <h1>Pomodoro Timer</h1>
+        <div class="timer">
+            <span id="minutes">25</span>:<span id="seconds">00</span>
+        </div>
+        <div class="controls">
+            <button id="start">Start</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+        </div>
+        <div class="settings">
+            <label>Work (min): <input type="number" id="work-duration" min="1" value="25"></label>
+            <label>Break (min): <input type="number" id="break-duration" min="1" value="5"></label>
+            <button id="save-settings">Save</button>
+        </div>
+        <div class="tasks">
+            <h2>Tasks</h2>
+            <input type="text" id="task-input" placeholder="Add a task">
+            <button id="add-task">Add</button>
+            <ul id="task-list"></ul>
+        </div>
+    </div>
+    <script src="../dist/main.js"></script>
 </body>
 </html>

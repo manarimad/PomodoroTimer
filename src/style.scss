@@ -1,3 +1,153 @@
-h1{
-    color: pink;
+
+// /* // src/style.css (Basic Styles) */
+// body {
+//     font-family: Arial, sans-serif;
+//     text-align: center;
+//     background-color: #f4f4f4;
+// }
+// .container {
+//     max-width: 400px;
+//     margin: 50px auto;
+//     padding: 20px;
+//     background: white;
+//     border-radius: 10px;
+//     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+// }
+// #timer-display {
+//     font-size: 48px;
+//     margin: 20px 0;
+// }
+// .controls button, .settings button {
+//     padding: 10px 15px;
+//     margin: 5px;
+//     border: none;
+//     background: #007BFF;
+//     color: white;
+//     font-size: 16px;
+//     cursor: pointer;
+//     border-radius: 5px;
+// }
+// .controls button:hover, .settings button:hover {
+//     background: #0056b3;
+// }
+// .settings input {
+//     width: 50px;
+//     padding: 5px;
+//     text-align: center;
+// }
+/* Variables */
+$primary-color: #f76c6c;
+$secondary-color: #6cf7a4;
+$text-color: white;
+$button-hover-opacity: 0.8;
+$container-bg: rgba(0, 0, 0, 0.2);
+$button-radius: 5px;
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: $primary-color;
+    color: $text-color;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s ease-in-out;
+}
+
+/* Container */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: $container-bg;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Timer Display */
+.timer {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: $button-radius;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    &:hover {
+        opacity: $button-hover-opacity;
+    }
+}
+
+#start {
+    background: #4caf50;
+    color: $text-color;
+}
+
+#pause {
+    background: #ff9800;
+    color: $text-color;
+}
+
+#reset {
+    background: #f44336;
+    color: $text-color;
+}
+
+/* Settings */
+.settings {
+    margin-top: 20px;
+
+    input {
+        width: 50px;
+        text-align: center;
+        padding: 5px;
+        margin: 5px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    button {
+        background: #2196f3;
+        color: $text-color;
+    }
+}
+
+/* Tasks */
+.tasks {
+    margin-top: 20px;
+
+    input {
+        width: 80%;
+        padding: 10px;
+        margin: 10px 0;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    button {
+        background: #673ab7;
+        color: $text-color;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            background: rgba(255, 255, 255, 0.2);
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    }
 }
